@@ -1,0 +1,102 @@
+body {
+    background-color: #444444;
+}
+
+header {
+    background-color: rgb(56, 28, 83);
+    height: 50px;
+    margin: 30px auto 30px auto;
+    border-radius: 100px;
+    width: fit-content;
+ 
+}
+
+
+header ul li {
+  
+    display: inline;
+    border-radius: 100px;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 17px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.sub-menu li {
+    display: block;
+    color: white;
+   
+    text-align: center;
+    text-decoration: none;
+    border-radius:  0px;
+    width: fit-content; 
+}
+
+
+
+
+
+
+#menu li:hover { 
+    background-color: #452492;
+    -webkit-transition: background-color 700ms linear;
+    -ms-transition: background-color 700ms linear;
+    transition: background-color 700ms linear;
+    border-radius: 0%;
+}
+
+#menu li:first-child:hover {
+    border-radius: 0px 100px 100px 0px;
+}
+
+#menu li:last-child:hover {
+    border-radius: 100px 0px 0px 100px;
+}
+
+#menu ul.top-menu li ul.sub-menu {
+   
+    display: none;
+    max-width: 90px;
+}
+
+#menu ul.top-menu li:hover ul.sub-menu {
+    
+
+    /* -webkit-transition: background-color 700ms linear;
+    -ms-transition: background-color 700ms linear;
+    transition: background-color 700ms linear;
+*/
+    
+    display: block;
+    padding: 0px 0px 0px 0px;
+    margin-bottom: 10px;
+    color: white;
+    border-radius:  0px 0px 10px 10px; 
+}
+
+#menu ul.top-menu li:hover ul.sub-menu li {
+    background-color: #681d8b;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+    padding-top: 0px;
+    text-align: center;
+    width: 100%;
+    height: 29px;
+    padding-top: 13px;
+}
+
+#menu ul.top-menu li:hover ul.sub-menu li:hover {
+    
+    border-radius: 0%;
+    background-color: rgb(56, 28, 83);
+}
