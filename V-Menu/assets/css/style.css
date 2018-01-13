@@ -1,0 +1,115 @@
+body {
+  background-color: #444444;
+  /*Kole mohtaviyate safe ro rast be chap mikone in*/
+  direction: rtl;
+}
+
+#v-nav {
+  width: max-content;
+  font-family: Tahoma, Geneva, sans-serif;
+  vertical-align: middle;
+  font-size: 14px;
+  /*Nahveye neveshte shodane fonto dorost mikone va rastchin anjam mide*/
+  direction: rtl;
+  text-align: center;
+  z-index: 1000;
+  position: fixed;
+  top: 40%;
+}
+
+#v-nav ul {
+  text-decoration: none;
+  margin: 0px;
+  padding: 2px;
+  box-sizing: border-box;
+  border-radius: 10px 0px 0px 10px;
+}
+
+ul.vertical-top-level {
+  background-color: rgb(94, 19, 138);
+}
+
+ul.vertical-top-level li {}
+
+#v-nav a {
+  /* baraye inke neveshte ha vasat dar vasat dar biyad */
+  padding-top: 8%;
+  /* vase inke padding size ro ziad nakone*/
+  box-sizing: border-box;
+  color: #fff;
+  display: block;
+  height: 40px;
+  text-decoration: none;
+  width: 100px;
+}
+
+#v-nav li:hover {
+  /* animation part*/
+  -webkit-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
+  width: 100%;
+  background-color: #452492;
+  position: relative;
+  vertical-align: center;
+}
+
+ul.vertical-sub-level {
+  /* by defult namayesh dade nashe*/
+  display: none;
+}
+
+li:hover .vertical-sub-level {
+  /* animation part*/
+  -webkit-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
+  display: block;
+  position: absolute;
+  right: 100px;
+  top: 0px;
+}
+
+/* in bakhsh ham neveshte shode baraye farzande akhar to list ke be samte dg baz she*/
+
+li:hover:last-child .vertical-sub-level {
+  display: block;
+  position: absolute;
+  right: 100px;
+  top: -120px;
+}
+
+li:hover .vertical-sub-level #level-2 {
+  right: 150px;
+}
+
+ul.vertical-sub-level li {
+  border: none;
+  float: right;
+  width: 150px;
+  background-color: rgb(94, 19, 138);
+}
+
+#v-nav .vertical-sub-level {
+  /* baraye dadane vijegi haye sathe  */
+  background-color: rgb(94, 19, 138);
+}
+
+#v-nav .vertical-sub-level .vertical-sub-level {
+  /* baraye dadane vijegi haye sathe 2 */
+  background-color: rgb(94, 19, 138);
+}
+
+li:hover .vertical-sub-level .vertical-sub-level {
+  /* by defult namayesh dade nashe*/
+  display: none;
+}
+
+.vertical-sub-level li:hover .vertical-sub-level {
+  /* by defult namayesh dade nashe*/
+  display: block;
+}
+
+#level-2 {
+  background-color: #249245;
+}
