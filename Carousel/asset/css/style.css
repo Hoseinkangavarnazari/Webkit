@@ -1,0 +1,38 @@
+#myProgress {
+  position: absolute;
+  width: 100%;
+  background-color: #ddd;
+  z-index: 100;
+}
+
+#myBar {
+  position: absolute;
+  top: 350px;
+  width: 1%;
+  height: 5px;
+  background-color: #4CAF50;
+}
+
+.container {
+  background-color: rgb(247, 249, 255);
+  position: relative;
+  width: 350px;
+  height: 430px;
+  overflow: hidden;
+  border-radius: 20px;
+  border: rgb(177, 184, 190) solid 3px;
+}
+
+.carousel_image {
+  position: absolute;
+  z-index: 0;
+}
+
+.title {
+  position: absolute;
+  z-index: 100;
+  bottom: 30px;
+  left: 30%;
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
