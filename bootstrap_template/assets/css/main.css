@@ -21,7 +21,6 @@
     opacity: 0.8;
 }
 
-
 #menu {
     z-index: 1000;
     position: fixed;
@@ -33,7 +32,7 @@
 
 #topic {
     padding-top: 40px;
-    min-height: 600px;
+    min-height: 500px;
     margin-right: auto;
     margin-left: auto;
     padding-bottom: 50px;
@@ -43,9 +42,8 @@
 
 #sell-plan {
     height: 400px;
-    background-color:#fff;
+    background-color: #fff;
 }
-
 
 #topic-title {
     font-size: 30px;
@@ -56,9 +54,8 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.topics {
+#topic .inner_topic {
     /* background-color: #452e49 ;  */
-
     padding: 70px;
     text-align: center;
 }
@@ -67,4 +64,66 @@ body {
     display: block;
     margin-right: auto;
     margin-left: auto;
+}
+
+#shop {
+    padding-top: 40px;
+    min-height: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 50px;
+    background-color: #eee;
+    color: #222;
+}
+
+#shop_list .topics {
+    text-align: center;
+    /* box-sizing: border-box;*/
+    border-radius: 10px;
+    min-height: 450px;
+}
+
+.outer_shop {
+    position: relative;
+}
+
+.inner_shop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#inner_shop {
+    border: solid 2px black;
+    border-radius: 10px;
+    padding-top: 30px;
+    min-height: 400px;
+}
+
+.shop_topic {
+    text-align: center;
+    /* box-sizing: border-box;*/
+    border-radius: 10px;
+    min-height: 450px;
+
+}
+
+#badge {
+    padding-top: 40px;
+    min-height: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 50px;
+    background-color: rgb(59, 52, 77);
+    color: #fff;
+}
+
+#inner_badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
