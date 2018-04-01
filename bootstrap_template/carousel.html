@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>934445- carousel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" src="./assets/css/fonticon.css">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/slider.css" />
+    <script src="./assets/js/main.js"></script>
+
+</head>
+
+<body>
+
+        <div class="slider">
+                <div class="page-num">
+                </div>
+                <i class="handler" id="pre" onclick="pre()">
+                    <span class="glyphicon glyphicon-triangle-left icon_slider"></span>
+                </i>
+                <i class="handler" id="next" onclick="next()">
+                    <span class="glyphicon glyphicon-triangle-right icon_slider"></span>
+                </i>
+                <picture class="pic" id="active">
+                    <source media="(min-width: 1280px)" srcset="./assets/image/slider/1920/1.jpg">
+                    <source media="(min-width: 640px)" srcset="./assets/image/slider/1280/1.jpg">
+                    <img src="./assets/image/slider/640/1.jpg" alt="Flowers" style="width:auto;">
+                </picture>
+                <picture class="pic">
+                    <source media="(min-width: 1280px)" srcset="./assets/image/slider/1920/2.jpg">
+                    <source media="(min-width: 640px)" srcset="./assets/image/slider/1280/2.jpg">
+                    <img src="./assets/image/slider/640/2.jpg" alt="Flowers" style="width:auto;">
+                </picture>
+                <picture class=" pic ">
+                    <source media="(min-width: 1280px)" srcset="./assets/image/slider/1920/3.jpg">
+                    <source media="(min-width: 640px)" srcset="./assets/image/slider/1280/3.jpg">
+                    <img src="./assets/image/slider/640/3.jpg" alt="Flowers" style="width:auto;">
+                </picture>
+            </div>
+
+
+</body>
+
+</html>

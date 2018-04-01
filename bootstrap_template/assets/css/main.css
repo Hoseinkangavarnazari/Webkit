@@ -1,0 +1,70 @@
+.navbar-brand {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.navbar-toggle {
+    z-index: 1000;
+}
+
+.nav-local {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 0;
+    opacity: 0.8;
+}
+
+
+#menu {
+    z-index: 1000;
+    position: fixed;
+    color: rgb(255, 255, 255);
+    background-color: #111111;
+    font-size: 22px;
+    font-weight: 10px;
+}
+
+#topic {
+    padding-top: 40px;
+    min-height: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 50px;
+    background-color: rgb(59, 52, 77);
+    color: #fff;
+}
+
+#sell-plan {
+    height: 400px;
+    background-color:#fff;
+}
+
+
+#topic-title {
+    font-size: 30px;
+    text-align: center;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.topics {
+    /* background-color: #452e49 ;  */
+
+    padding: 70px;
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
