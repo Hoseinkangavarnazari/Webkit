@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'IranSans';
+  src: url('../fonts/IRANSansWeb.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/IRANSansWeb.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/IRANSansWeb.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/IRANSansWeb.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/IRANSansWeb.ttf')  format('truetype'); /* Legacy iOS */
+}
+#slider li{
+	display:none;
+}
+#slider li.active{
+	display:block;
+}
+
+
+ul.btm li{
+	display:inline-table;
+	margin-right:10px;
+}
+ul.btm li:hover{
+	color:red;
+	cursor:pointer;
+}
+ul.btm li span.active{
+	color:red;
+}
+.main{
+	text-align:center;
+}
+.MainSlider{
+    position: relative;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+}
+.left{
+position: absolute;
+    left: 5px;
+    top: 40%;
+    z-index: 99;
+    background: white;
+    padding: 2px;
+    font-size: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.right{
+	position: absolute;
+    right: 5px;
+    top: 40%;
+    z-index: 99;
+    background: white;
+    padding: 2px;
+    font-size: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.right:hover,.left:hover{
+	background:yellow;
+	color:black;
+}
+.MainSlider p{
+	
+top: 84%;
+    position: absolute;
+    z-index: 999;
+    color: white;
+    width: 100%;
+    background: red;
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
