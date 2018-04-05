@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <title>irprogram</title>
+    <link rel="stylesheet" type="text/css" href="./asset/css/style.css">
+
+    <script src="asset/js/script.js"></script>
+</head>
+
+<body>
+
+
+    <div id="first_container">
+
+
+        <div id="test_name">Mathematic</div>
+        <div id="question_field">
+            <p id="start_msg"> Do you want start exam?</p>
+
+            <h4>
+                Question
+                <span id="q_number">1</span>
+            </h4>
+            <span id="question"> This is simple question from u ? </span>
+            <div id="progress_bar"></div>
+
+            <form id="answer_section" onclick="check()" name="myForm">
+
+                <label>
+                    <input type="radio" class="answer" id="q_1" name="optradio">
+                    <span id="q_t_1"></span>
+                </label>
+                <br>
+                <label>
+                    <input type="radio" class="answer" id="q_2" name="optradio">
+                    <span id="q_t_2"></span>
+                </label>
+                <br>
+
+                <label>
+                    <input type="radio" class="answer" id="q_3" name="optradio">
+                    <span id="q_t_3"></span>
+                </label>
+                <br>
+
+                <label>
+                    <input type="radio" class="answer" id="q_4" name="optradio">
+                    <span id="q_t_4"></span>
+                </label>
+            </form>
+
+            <button id="start_btn" class="btn" onclick="start()">Start</button>
+            <button id="pre" class="btn_control" onclick="pre()">Pre</button>
+            <button id="next" class="btn_control" onclick="next()">Next</button>
+
+            <a style="font-size: 14px;" onclick="terminate()" id="terminate">terminate</a>
+        </div>
+
+    </div>
+    </div>
+
+</body>
+
+</html>
