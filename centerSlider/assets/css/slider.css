@@ -1,0 +1,136 @@
+body {
+    /* definined font
+    we could add font in assets and import them from there too */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* for set image in center of slider */
+
+div.outer {
+    width: 300px;
+    margin: 0 auto;
+    overflow: visible;
+    height: 102px;
+    /* for demo since child is floated */
+}
+
+div.inner {
+    position: relative;
+    float: right;
+    right: 50%;
+}
+
+div.inner img {
+    position: relative;
+    right: -50%;
+}
+
+.slider {
+    position: relative;
+    /* background-color: #222; */
+    min-height: 500px;
+    max-height: 500px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.pic {
+    width: 100%;
+    display: none;
+    z-index: 1;
+}
+
+/* active  image in slider */
+
+.pic#active {
+    display: block !important;
+}
+
+.handler {
+    background-color: #eee;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 245px;
+    z-index: 2002;
+}
+
+.handler#next {
+    right: 0px;
+    float: right;
+}
+
+#pre {
+    color: dimgrey;
+    font-size: 30px;
+    position: absolute;
+}
+
+#next {
+    color: dimgrey;
+    font-size: 30px;
+}
+
+.icon_slider {
+    left: 12px;
+    top: 10px;
+}
+
+/* to set page bullet in center of div */
+
+.slider .page-num {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 110px;
+    z-index: 1000;
+}
+
+.radio-local {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    border: solid white 3px;
+}
+
+/* active style of page num */
+
+.radio-local#active {
+    background-color: white !important;
+}
+
+/* text on slider */
+
+.text_slider {
+    font-size: 20px;
+    width: 350px;
+    height: 70px;
+    background: white;
+    position: absolute;
+    bottom: 95px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1000;
+}
+
+.text_slider>div {
+    position: absolute;
+    background: palevioletred;
+    text-align: center;
+    bottom: 5px;
+    left: 165px;
+    height: 60px;
+    width: 180px;
+    z-index: 1000;
+}
+
+.text_slider_inner {
+    margin-top: 10px;
+    /* to be top of slider and behind the navigation bar */
+    z-index: 1001;
+}

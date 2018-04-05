@@ -1,0 +1,73 @@
+<html>
+
+<head>
+  <!-- codec of text -->
+  <meta charset="utf-8" />
+  <title>934445</title>
+
+  <!-- bootstrap and jquery dependency -->
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+
+  <!-- two css one for slider and another for main -> its better to put them in one css file
+  but i seperated them to use slider for another projects -->
+
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/slider.css" />
+
+  <!-- javascript that i used for slider -->
+  <script src="./assets/js/main.js"></script>
+</head>
+
+<body>
+
+
+
+  <!-- slider part  -->
+  <div class="slider">
+    <div class="text_slider">
+      <p class="text_slider_inner" id="text1" style="margin-left:43px; margin-top:15px;">آدرس یک</p>
+      <div>
+        <div class="text_slider_inner" id="text2">صفحه نخست</div>
+      </div>
+    </div>
+    <!-- bullets for contolling slider -->
+    <div class="page-num">
+    </div>
+    <!-- two handler for pre and next in slider -->
+    <i class=" handler" id="pre" onclick="pre()">
+      <img src="./assets/icon/slider/left-arrow.png" style=" margin:10px; width:35px; height:40px;">
+    </i>
+    <i class="handler" id="next" onclick="next()">
+      <img src="./assets/icon/slider/right-arrow.png" style=" margin:10px; width:35px; height:40px;">
+    </i>
+    <div class="outer">
+      <div class="inner">
+        <!-- i found this tag for changing the picture in different size of document page(window) 
+        and i used outer and inner for put the picture always in center of slidre part 
+       -->
+        <picture class="pic" id="active">
+          <source media="(min-width: 1280px)" srcset="./assets/image/slider/1920/1.jpg">
+          <source media="(min-width: 640px)" srcset="./assets/image/slider/1280/1.jpg">
+          <img src="./assets/image/slider/640/1.jpg" alt="Flowers" style="width:auto;">
+        </picture>
+        <picture class="pic">
+          <source media="(min-width: 1280px)" srcset="./assets/image/slider/1920/2.jpg">
+          <source media="(min-width: 640px)" srcset="./assets/image/slider/1280/2.jpg">
+          <img src="./assets/image/slider/640/2.jpg" alt="Flowers" style="width:auto;">
+        </picture>
+        <picture class=" pic ">
+          <source media="(min-width: 1280px)" srcset="./assets/image/slider/1920/3.jpg">
+          <source media="(min-width: 640px)" srcset="./assets/image/slider/1280/3.jpg">
+          <img src="./assets/image/slider/640/3.jpg" alt="Flowers" style="width:auto;">
+        </picture>
+      </div>
+    </div>
+  </div>
+  <!-- end of slider -->
+
+
+
+</body>
+
+</html>
