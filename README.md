@@ -1,5 +1,5 @@
 # Webkit
- i'am trying to collect my codes in web_development  to make a lib for myself,
- it might helps you! 
+I'am trying to collect my example codes in web_development such as  Navigations,Sliders,Templates and so on... 
+It might help you! 
  
  
