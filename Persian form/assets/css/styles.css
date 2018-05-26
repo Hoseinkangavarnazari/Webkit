@@ -1,0 +1,140 @@
+input {
+    text-align: right;
+}
+
+input:focus {
+    text-align: center
+}
+
+body {
+    background-color: whitesmoke;
+    font-size: 20px;
+    font-family: Helvetica, serif;
+}
+
+.form {
+    font-size: 20px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.clockContainer {
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row nowrap;
+}
+
+.clock {
+    order: 1;
+    width: 460px;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputContainer {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    text-align: right;
+}
+
+.inputItemRow {
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.inputItemCheckBox {
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    align-items: right;
+    margin: 12px;
+}
+
+.inputItemSubmit {
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: left;
+    margin-bottom: 12px;
+    margin-left : 20px;
+}
+
+.inputItemLabel {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-flow: row-reverse nowrap;
+    align-items: right;
+    justify-content: right;
+}
+
+input {
+    font-size: 20px;
+    margin: 5px;
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.warn {
+    width: 100%;
+    font-size: 14px;
+    padding-right: 20px;
+    color: red;
+    margin-bottom: 9px;
+    display: none;
+}
+
+.labels {
+    width: 100%;
+    font-size: 18px;
+    padding-right: 20px;
+}
+
+button {
+    background: white;
+    border: solid 1px rgb(107, 107, 107);
+    width: 100px;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 19px;
+}
+
+button:hover {
+    background: whitesmoke;
+}

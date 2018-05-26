@@ -1,0 +1,119 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <script src="./assets/lib/Jquery/Jquery.js"> </script>
+    <script src="./assets/lib/flipclock/flipclock.js"></script>
+    <link href="./assets/lib/Select2/Select2.css" rel="stylesheet" />
+    <script src="./assets/lib/Select2/Select2.js"></script>
+    <script src="./assets/lib/JBox/JBox.js"></script>
+    <link href="./assets/lib/JBox/JBox.css" rel="stylesheet" charset="utf-8">
+
+    <script src="./assets/lib/iCheck/iCheck.js"></script>
+    <link href="./assets/lib/iCheck/skins/square/green.css" rel="stylesheet">
+    <script src="./assets/lib/SweetAlert/sweetAlert.js"></script>
+
+
+    <link rel="stylesheet" href="./assets/lib/flipclock/flipclock.css">
+
+    <script src="./assets/js/script.js" charset="utf-8"></script>
+    <link href="./assets/css/styles.css" rel="stylesheet">
+
+</head>
+
+<body charset="utf-8">
+
+    <from>
+        <div class="form">
+            <div class="clockContainer">
+                <div class="clock"></div>
+            </div>
+
+            <div class="inputContainer">
+
+
+
+                <div class="inputItemRow">
+
+                    <label class="labels"> نام و نام خانوادگی</label>
+                    <input id="firstName" style="width: 44%;" placeholder=" نام خود را وارد کنید">
+                    <input id="lastName" style="width: 44%;" placeholder=" نام خانوادگی خود را وارد کنید">
+                    <label class="warn" id="warnNames"> نام و نام خانوادگی الزامیست و فرمت صحیح آن باید لحاظ شود*</label>
+                </div>
+
+
+                <div class="inputItemRow">
+                    <label class="labels"> نام کاربری</label>
+                    <input id="userName" style="width: 100%;  margin: 2px 18px;" placeholder="نام کاربری">
+                    <label class="warn" id="warnUsername">نام کاربری الزامیست و شامل حروف، ارقام، آندرلاین و نقظه می تواند باشد</label>
+                </div>
+                <div class="inputItemRow">
+                    <label class="labels"> کلمه عبور</label>
+                    <input id="password" type="text" style="width: 100%;   margin: 2px 18px;" placeholder=" کلمه عبور">
+                    <label class="warn" id="warnPassword"> حداقل ده کاراکتر و حداقل یک شماره،حرف بزرگ و کوچک الزامیست</label>
+                </div>
+                <div class="inputItemRow">
+                    <label class="labels"> تکرار کلمه عبور</label>
+                    <input type="text" id="repassword" style="width: 100%; margin: 2px 18px;" placeholder=" تکرار کلمه عبور">
+                    <label class="warn" id="warnRepassword"> تکرار رمز با خود رمز حتما باید یکسان باشد</label>
+                </div>
+
+                <div class="inputItemRow">
+                    <label class="labels"> تاریخ تولد</label>
+                    <input id="day" style="width: 120px;" placeholder="روز" type="number" onkeydown="javascript: return event.keyCode == 69 ? false : true"
+                        min="0" max="31"> /
+                    <select class="month" id='monthSelect' style="width: 120px; ; direction :rtl;" placeholder="test">
+                        <option></option>
+                        <option value="one">فروردین</option>
+                        <option value="two">اردیبهشت</option>
+                        <option value="three">خرداد</option>
+                        <option value="four">تیر</option>
+                        <option value="five">مرداد</option>
+                        <option value="six">شهریور</option>
+                        <option value="seven">مهر</option>
+                        <option value="eight">آبان</option>
+                        <option value="nine">آذر</option>
+                        <option value="ten">دی</option>
+                        <option value="eleven">بهمن</option>
+                        <option value="twelve">اسفند</option>
+                    </select>
+                    /
+                    <input style="width: 120px" id="year" placeholder="سال" type="number" onkeydown="javascript: return event.keyCode == 69 ? false : true">
+                    <label class="warn" id="warnDate"> تاریخ باید به شمسی و درست وارد شود</label>
+                </div>
+
+
+                <div class="inputItemRow">
+                    <select class="gender" id='genderSelect' style="width: 120px; ; direction :rtl;" placeholder="test" value='test'>
+                        <option></option>
+                        <option value="man">مرد</option>
+                        <option value="female">زن</option>
+                        <option value="none">نامشخص</option>
+
+                    </select>
+                    <input style="width: 320px" id="telNumber" placeholder="شماره تلفن" type="tel" pattern="\d*" maxlength="11">
+                    <label style="text-align: left; margin-left: 15px;" class="warn" id="warnTel"> فرمت صحیح شماره تلفن باید رعایت شود</label>
+                    <label style="text-align: right; margin-top: -28px;" class="warn" id="warnGender"> این فیلد نباید خالی رها شود</label>
+                </div>
+                <br />
+
+                <div class="inputItemCheckBox">
+                    <input type="checkbox"> شرایط را خوانده و موافقم &nbsp; &nbsp;
+                </div>
+
+
+                <div class="inputItemSubmit">
+                    <button id='submitButton' disabled onclick="CheckForm()">ثبت نهایی</button>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </from>
+
+</body>
+
+</html>
