@@ -1,0 +1,56 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+
+    <p id="para">
+
+    </p>
+
+    <div id="progressbar" style="background-color: aquamarine; height: 30px; width: 0%;"></div>
+
+    <script>
+        var ws = new WebSocket('ws://localhost:5001');
+        ws.onopen = function () {
+            console.log('connected');
+        }
+
+        var bar = 0;
+        var packetCounter = 0 ; 
+        ws.onmessage = (message) => {
+
+            //     var para = document.getElementById("para");
+            //   console.log(para);
+
+            // para.innerText = para.innerText + message.data;
+
+            var progressbar = document.getElementById("progressbar");
+            var value = document.getElementById("value");
+            bar = bar + 0.01;
+            packetCounter++;
+            console.log("bar value is ", bar);
+            progressbar.style.width = bar + '%';
+            value.innerText = packetCounter;
+            ws.send('Series received ' + Date.now());
+        }
+        ws.onclose = function () {
+            console.log("closed websocket");
+        }
+
+        setTimeout(() => {
+            ws.send("example massege sent to the server side of program");
+        }, 5000);
+
+    </script> Packet received :
+    <p id="value"> </p>
+    <br />
+</body>
+
+
+</html>
+
+</html>
